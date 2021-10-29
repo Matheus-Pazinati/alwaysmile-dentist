@@ -1,0 +1,31 @@
+.menu {
+  display: flex;
+  background: #FCFCFC;
+  width: 100%;
+  height: 4.5rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #E4E4E4;
+  padding: 0.65rem 7.65rem;
+}
+.menu h1 {
+  font: 700 2rem 'DM sans', sans-serif;
+  color: #0F241D;
+}
+.menu h1 .first-letter {
+  color: #034C8C;
+}
+.menu h1 .last-word {
+  color: #04BEC4;
+}
+.menu-link {
+  display: flex;
+  width: 27.5rem;
+}
+.menu-link-item {
+  font: 400 1rem 'DM Sans', sans-serif;
+  margin-right: 2rem;
+}
+.menu-link-item:last-child {
+  margin-right: 0;
+}
