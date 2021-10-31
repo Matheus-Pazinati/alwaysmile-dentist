@@ -20,6 +20,9 @@ html {
   margin-bottom: 4.5rem;
   z-index: 100;
 }
+nav.scroll {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
 .menu h1 a {
   font: 700 2rem 'DM sans', sans-serif;
   color: var(--color-title);
