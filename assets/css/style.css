@@ -3,9 +3,13 @@
   --color-title: #0F241D;
   --color-option: #03658C;
   --color-text: #767676;
+  --color-back: #F9F9F9;
 }
 html {
   scroll-behavior: smooth;
+}
+strong {
+  color: var(--color-option);
 }
 .menu {
   position: fixed;
@@ -70,7 +74,7 @@ nav.scroll {
   width: 100%;
   height: 43.6875rem;
   padding: 15rem 0 0 7.65rem;
-  background: #F9F9F9;
+  background: var(--color-back);
 }
 .main .description {
   display: grid;
@@ -174,12 +178,32 @@ nav.scroll {
 .about-us h3 {
   font: 700 2.25rem 'Poppins', sans-serif;
   margin-bottom: 0.75rem;
+  color: var(--color-title);
 }
 .about-us p {
   font: 400 16px 'DM Sans', sans-serif;
   line-height: 1.5rem;
+  color: var(--color-text);
 }
 .divider-2 {
   height: 0.0625rem;
   background: linear-gradient(270deg, rgba(204, 244, 230, 0.34)  0%, #69B99D 100%);
+}
+.services {
+  width: 100%;
+  height: 54.375rem;
+  padding: 10rem 7.65rem;
+  text-align: center;
+  background: var(--color-back);
+}
+.services-description {
+  width: 32.6875rem;
+  margin: 0 auto;
+}
+.services-description h3 {
+  font: 700 2.25rem 'Poppins', sans-serif;
+  margin-bottom: 0.75rem;
+}
+.services-description p {
+  font: 700 1.125rem 'DM Sans', sans-serif;
 }
