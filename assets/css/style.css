@@ -4,7 +4,11 @@
   --color-option: #03658C;
   --color-text: #767676;
 }
+html {
+  scroll-behavior: smooth;
+}
 .menu {
+  position: fixed;
   display: flex;
   background: #FBFBFB;
   width: 100%;
@@ -13,8 +17,10 @@
   align-items: center;
   border-bottom: 1px solid #E4E4E4;
   padding: 0.65rem 7.65rem;
+  margin-bottom: 4.5rem;
+  z-index: 100;
 }
-.menu h1 {
+.menu h1 a {
   font: 700 2rem 'DM sans', sans-serif;
   color: var(--color-title);
 }
@@ -34,6 +40,24 @@
 }
 .menu-link-item a {
   color: var(--color-title);
+  transition: color 0.2s;
+  position: relative;
+}
+.menu-link-item a:hover {
+  color: var(--color-main);
+}
+.menu-link-item a::after {
+  content: '';
+  width: 0;
+  height: 0.125rem;
+  background: var(--color-main);
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem;
+  transition: width 0.2s;
+}
+.menu-link-item a:hover::after {
+  width: 100%;
 }
 .menu-link-item:last-child {
   margin-right: 0;
@@ -42,7 +66,7 @@
   display: flex;
   width: 100%;
   height: 43.6875rem;
-  padding: 9.5rem 0 0 7.65rem;
+  padding: 15rem 0 0 7.65rem;
   background: #F9F9F9;
 }
 .main .description {
@@ -88,6 +112,7 @@
   width: 35rem;
   height: 23.44rem;
   object-fit: cover;
+  border-radius: 0.25rem;
   z-index: 1;
 }
 .clinic::before {
@@ -98,11 +123,60 @@
   top: -4.25rem;
   bottom: 0;
   right: 0;
-  left: 6.0625rem;;
+  left: 6.0625rem;
   background: #CCFFEB;
   z-index: 0;
+  border-radius: 0.25rem;
 }
 .divider-1 {
   height: 1px;
   background: linear-gradient(270deg, #69B99D 0%, rgba(204, 244, 230, 0.34) 100%);
+}
+.about {
+  width: 100%;
+  height: 47.875rem;
+  padding: 12.125rem 0 10rem 0;
+  background: #FFF;
+  display: flex;
+}
+.about-image {
+  position: relative;
+}
+.about-image img {
+  width: 35.625rem;
+  height: 25.75rem;
+  object-fit: cover;
+  margin-right: 4rem;
+  position: relative;
+  z-index: 1;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+.about-image::before {
+  content: '';
+  width: 35.625rem;
+  height: 25.75rem;
+  position: absolute;
+  border-radius: 0.25rem;
+  top: -2.125rem;
+  bottom: 0;
+  right: 0;
+  left: -12rem;
+  background: #CCFFEB;
+  z-index: 0;
+}
+.about-us {
+  width: 38.125rem;
+}
+.about-us h3 {
+  font: 700 2.25rem 'Poppins', sans-serif;
+  margin-bottom: 0.75rem;
+}
+.about-us p {
+  font: 400 16px 'DM Sans', sans-serif;
+  line-height: 1.5rem;
+}
+.divider-2 {
+  height: 0.0625rem;
+  background: linear-gradient(270deg, rgba(204, 244, 230, 0.34)  0%, #69B99D 100%);
 }
