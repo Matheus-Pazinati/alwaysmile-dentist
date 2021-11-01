@@ -196,16 +196,18 @@ nav.scroll {
   background: var(--color-back);
 }
 .services-description {
-  width: 32.6875rem;
+  padding: 0 18.725rem;
   margin: 0 auto;
   text-align: center;
 }
 .services-description h3 {
   font: 700 2.25rem 'Poppins', sans-serif;
   margin-bottom: 0.75rem;
+  color: var(--color-title);
 }
 .services-description p {
   font: 700 1.125rem 'DM Sans', sans-serif;
+  color: var(--color-title);
 }
 .services-examples {
   display: flex;
@@ -227,9 +229,11 @@ nav.scroll {
 .services-examples-item h4 {
   font: 700 1.5rem 'Poppins', sans-serif;
   margin-bottom: 0.75rem;
+  color: var(--color-title);
 }
 .services-examples-item p {
   font: 400 1rem 'DM Sans', sans-serif;
   line-height: 1.25rem;
   margin: 0 3rem 3.625rem;
+  color: var(--color-text);
 }
