@@ -1,3 +1,4 @@
+//Aplicando sombra no cabeçalho quando der scroll na página
 const cabecalho = document.querySelector('.menu')
 const alturaCabecalho = cabecalho.offsetHeight
 window.addEventListener ('scroll', () => {
@@ -8,6 +9,7 @@ window.addEventListener ('scroll', () => {
   }
 })
 
+//Criando carrossel dos depoimentos com o Swiper
 const swiper = new Swiper('.swiper', {
   slidesPerView: 2,
   slidesPerGroup: 2,
@@ -18,3 +20,20 @@ const swiper = new Swiper('.swiper', {
   },
   keyboard: true
 });
+
+//Adicionando efeito de "lentidão" ao dar scroll na página utilizando ScrollReveal
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true,
+})
+
+scrollReveal.reveal(
+  `#main .description, #main .clinic,
+   #about .about-image, #about .about-us,
+   #services .services-description, #services .services-examples,
+   #testimony header, #testimony .testimony-items,
+   #contact .contact-text, #contact .contact-information`
+   , { interval: 100 }
+  )
