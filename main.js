@@ -7,3 +7,14 @@ window.addEventListener ('scroll', () => {
     cabecalho.classList.remove('scroll')
   }
 })
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 2,
+  slidesPerGroup: 2,
+  spaceBetween: 32,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  keyboard: true
+});

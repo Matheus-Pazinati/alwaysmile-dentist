@@ -135,7 +135,7 @@ nav.scroll {
   z-index: 0;
   border-radius: 0.25rem;
 }
-.divider-1, .divider-3 {
+.divider-1 {
   height: 1px;
   background: linear-gradient(270deg, #69B99D 0%, rgba(204, 244, 230, 0.34) 100%);
 }
@@ -220,6 +220,7 @@ nav.scroll {
   text-align: center;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 4px solid var(--color-main);
+  border-radius: 0.25rem 0.25rem 0 0;
 }
 .services-examples-item img {
   width: 5rem;
@@ -236,4 +237,77 @@ nav.scroll {
   line-height: 1.25rem;
   margin: 0 3rem 3.625rem;
   color: var(--color-text);
+}
+.testimony {
+  background: #FFF;
+  height: 51.625rem;
+}
+.testimony header h3 {
+  font: 700 2.25rem 'Poppins', sans-serif;
+  text-align: center;
+  padding: 10rem 27.625rem 0;
+  color: var(--color-title);
+}
+.testimony-items {
+  display: flex;
+  padding: 4rem 7.65rem 3.625rem;
+  justify-content: space-between;
+  margin-bottom: 3.625rem;
+}
+.testimony-item {
+  width: 34rem;
+  height: 16.5rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+  margin-right: 2rem;
+
+}
+.testimony-item blockquote {
+  position: relative;
+  padding-left: 3.25rem;
+}
+.testimony-item blockquote p {
+  font: 400 1rem 'DM Sans', sans-serif;
+  text-indent: 1.825rem;
+  padding: 3.25rem 3.25rem 1.25rem 0;
+  color: var(--color-title);
+  line-height: 1.625rem;
+}
+.testimony-item .quotation {
+  font: 400 3rem serif;
+  position: absolute;
+  top: 2.2rem;
+  left: 3.2rem;
+  color: var(--color-main);
+}
+.testimony-item cite {
+  display: flex;
+  align-items: center;
+}
+.testimony-item cite img {
+  width: 2rem;
+  height: 2rem;
+  clip-path: circle();
+  object-fit: cover;
+}
+.testimony-item .name {
+  padding-left: 0.5rem;
+  font-style: normal;
+  font: 400 1rem 'DM Sans', sans-serif;
+  color: var(--color-text);
+}
+.swiper-slide {
+  opacity: 0;
+  visibility: hidden;
+}
+.swiper-slide-active, .swiper-slide-next {
+  opacity: 1;
+  visibility: visible;
+}
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+.swiper-pagination-bullet-active {
+  background: var(--color-main);
 }
