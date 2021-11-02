@@ -311,3 +311,48 @@ nav.scroll {
 .swiper-pagination-bullet-active {
   background: var(--color-main);
 }
+.contact {
+  display: flex;
+  padding: 10rem 0 10rem 7.65rem;
+  align-items: center;
+  background: var(--color-back);
+}
+.contact-text {
+  width: 25.25rem;
+  margin-right: 16.75rem;
+}
+.contact-text h3 {
+  font: 700 2.25rem 'Poppins', sans-serif;
+  color: var(--color-title);
+  margin-bottom: 0.75rem;
+}
+.contact-text p {
+  font: 400 1.125rem 'DM Sans', sans-serif;
+  color: var(--color-text);
+  line-height: 1.44rem;
+  margin-bottom: 2.375rem;
+}
+.contact-text a {
+  font: 400 1rem 'DM Sans', sans-serif;
+  background: var(--color-main);
+  color: var(--color-back);
+  padding: 0.875rem 2rem;
+  border-radius: 0.25rem;
+}
+.contact-text a i {
+  margin-right: 0.625rem;
+}
+.contact-information {
+  display: grid;
+  gap: 2rem;
+}
+.contact-information li {
+  display: flex;
+  font: 400 1.125rem 'DM Sans', sans-serif;
+  color: var(--color-text);
+}
+.contact-information li i {
+  font-size: 1.5rem;
+  color: var(--color-main);
+  margin-right: 0.75rem;
+}
