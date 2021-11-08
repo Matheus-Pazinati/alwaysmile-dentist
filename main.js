@@ -16,17 +16,32 @@ linksMenu.forEach((link) => { //Para cada um deles, faça...
 //Aplicando sombra no cabeçalho quando der scroll na página
 const cabecalho = document.querySelector('.menu')
 const alturaCabecalho = cabecalho.offsetHeight
-window.addEventListener ('scroll', () => {
+function sombraCabecalho() {
   if (window.scrollY >= alturaCabecalho ){
     cabecalho.classList.add('scroll')
   } else {
     cabecalho.classList.remove('scroll')
   }
+}
+
+//Funcao para verificar se o botão de retornar ao topo não está lá em cima na página
+const botaoTopo = document.querySelector('#button-top')//Seleciona div que contem o botao 
+function verificaBotaoTopo() {
+  if (window.scrollY >= 560){ //Se o scroll for maior que 560 de altura...
+    botaoTopo.classList.remove('hide-button')//Mostre o botão
+  } else {
+    botaoTopo.classList.add('hide-button')//Se não, esconda o botão
+  }
+}
+window.addEventListener ('scroll', () => {
+  sombraCabecalho();
+  verificaBotaoTopo();
 })
+
+
 
 //Criando carrossel dos depoimentos com o Swiper
 const swiper = new Swiper('.swiper', {
-
   slidesPerView: 1,
   spaceBetween: 32,
   pagination: {
@@ -60,3 +75,5 @@ scrollReveal.reveal(
    footer .copyright, footer .socials`
    , { interval: 100 }
   )
+
+  //Posicionando o botão de voltar ao topo
