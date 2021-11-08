@@ -78,6 +78,16 @@ nav.scroll {
 .menu-link-item:last-child {
   margin-right: 0;
 }
+nav .close {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+nav .open {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
 
 /* =====SESSAO PRINCIPAL===== */
 .main {
@@ -425,7 +435,6 @@ footer .socials a:hover {
   .menu {
     width: 100%;
     padding: 1.25rem 1.5rem;
-    justify-content: space-between;
   }
   .logo {
     font-size: 1.30rem;
@@ -435,13 +444,58 @@ footer .socials a:hover {
     display: inline-block;
     opacity: 1;
     visibility: visible;
-    font-size: 1.5rem;
-    color: var(--color-main);
   }
-  .menu-link {
+  .menu-items {
     display: none;
     opacity: 0;
     visibility: hidden;
+  }
+  .menu-link {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 6.4375rem;
+    gap: 4rem;
+    height: 100%;
+  }
+  nav.show.menu {
+    justify-content: unset;
+    align-items: initial;
+  }
+  nav.show .menu-items{
+    display: initial;
+    flex-direction: column;
+    opacity: 1;
+    visibility: visible;
+    background: #FFF;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  nav.show .menu-link-item {
+    margin-right: 0;
+    font: 700 1.5rem 'Poppins', sans-serif;
+    color: var(--color-title);
+  }
+  nav.show .menu-link:nth-child(1) {
+    margin-top: 3rem;
+  }
+  nav.show .close, nav .open {
+    display: initial;
+    visibility: visible;
+    opacity: 1;
+  }
+  nav.show .icon-close {
+    position: absolute;
+    right: 1.5rem;
+  }
+  .toggle {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--color-main);
   }
   .main {
     flex-direction: column;
