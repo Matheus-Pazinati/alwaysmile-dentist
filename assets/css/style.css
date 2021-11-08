@@ -423,6 +423,28 @@ footer .socials a:hover {
   transform: translateY(-5px);
 }
 
+/* =====BOTÃO VOLTAR TOPO===== */
+.back-top {
+  display: flex;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 2rem;
+  height: 2rem;
+  background: var(--color-option);
+  clip-path: circle();
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: .2s;
+}
+.back-top .icon-arrow-up {
+  color: #FFF;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
 /* =====RESPONSIVO===== */
 @media (max-width: 480px) {
   :root {
@@ -491,6 +513,11 @@ footer .socials a:hover {
   nav.show .icon-close {
     position: absolute;
     right: 1.5rem;
+  }
+  nav.show nav.open, nav.show .icon-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
   }
   .toggle {
     cursor: pointer;
@@ -648,5 +675,13 @@ footer .socials a:hover {
   footer .copyright .logo-footer {
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
+  }
+  .back-top {
+    opacity: 1;
+    visibility: visible;
+  }
+  .hide-button {
+    opacity: 0;
+    visibility: hidden;
   }
 }
