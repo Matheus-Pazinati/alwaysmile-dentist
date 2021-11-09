@@ -428,7 +428,7 @@ footer .socials a:hover {
   display: flex;
   position: fixed;
   right: 1rem;
-  bottom: 1rem;
+  bottom: 3rem;
   width: 2rem;
   height: 2rem;
   background: var(--color-option);
@@ -439,7 +439,7 @@ footer .socials a:hover {
   opacity: 0;
   transition: .2s;
 }
-.back-top .icon-arrow-up {
+.back-top a {
   color: #FFF;
   font-size: 1.5rem;
   padding: 1rem;
@@ -761,5 +761,29 @@ footer .socials a:hover {
   }
 }
 @media (min-width: 1025px) and (max-width: 1294px) {
-  
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .services {
+    height: auto;
+  }
+  .services-description {
+    padding: 0;
+  }
+  .services-examples-item {
+    height: auto;
+  }
+  .services-examples-item h4 {
+    font-size: 1.3rem;
+  }
+  .contact {
+    justify-content: space-between;
+  }
+  .contact-information {
+    padding-right: 3.5rem;
+  }
+  .contact-text {
+    margin-right: 0;
+  }
 }

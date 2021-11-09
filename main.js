@@ -38,8 +38,6 @@ window.addEventListener ('scroll', () => {
   verificaBotaoTopo();
 })
 
-
-
 //Criando carrossel dos depoimentos com o Swiper
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
