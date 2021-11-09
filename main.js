@@ -50,7 +50,7 @@ const swiper = new Swiper('.swiper', {
   },
   keyboard: true,
     breakpoints: {
-    481: {
+    601: {
       slidesPerView: 2,
       slidesPerGroup: 2,
       mousewheel: true,
@@ -75,5 +75,3 @@ scrollReveal.reveal(
    footer .copyright, footer .socials`
    , { interval: 100 }
   )
-
-  //Posicionando o botão de voltar ao topo

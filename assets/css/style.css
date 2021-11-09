@@ -271,7 +271,7 @@ nav .open {
 .testimony header h3 {
   font: 700 var(--title-font-size) 'Poppins', sans-serif;
   text-align: center;
-  padding: 10rem 27.625rem 0;
+  padding: 10rem 0 4rem 0;
   color: var(--color-title);
 }
 .testimony-items {
@@ -446,7 +446,7 @@ footer .socials a:hover {
 }
 
 /* =====RESPONSIVO===== */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   :root {
     --title-font-size: 1.875rem;
   }
@@ -459,8 +459,8 @@ footer .socials a:hover {
     padding: 1.25rem 1.5rem;
   }
   .logo {
-    font-size: 1.30rem;
-    margin-right: calc(10rem - 1.5rem);
+    font-size: 1.8rem;
+    margin-right: 4rem;
   }
   .icon-menu {
     display: inline-block;
@@ -534,16 +534,16 @@ footer .socials a:hover {
     order: 0;
   }
   .clinic::before {
-    width: 21.7rem;
-    height: 15.125rem;
+    width: auto;
+    height: auto;
     top: -2.5rem;
     bottom: 0;
     right: 0;
     left: 3.625rem;
   }
   .clinic img {
-    width: 20rem;
-    height: 14rem;
+    width: 90%;
+    height: 17rem;
   }
   .main .description {
     display: flex;
@@ -569,7 +569,7 @@ footer .socials a:hover {
   }
   .about-image img {
     width: 100%;
-    height: 16.125rem;
+    height: auto;
   }
   .about-image::before {
     width: 100%;
@@ -604,9 +604,6 @@ footer .socials a:hover {
   .testimony {
     height: auto;
     padding: 5rem 1.5rem;
-  }
-  .testimony header {
-    width: 16.25rem;
   }
   .testimony header h3 {
     padding: 0;
@@ -649,7 +646,6 @@ footer .socials a:hover {
     width: 100%;
   }
   .contact-text h3 {
-    width: 16.56rem;
     margin-bottom: 1rem;
   }
   .contact-text p {
@@ -684,4 +680,86 @@ footer .socials a:hover {
     opacity: 0;
     visibility: hidden;
   }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+  :root {
+    --title-font-size: 1.9rem;
+  }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .menu {
+    padding: 0.65rem 2rem;
+  }
+  .menu-link {
+    justify-content: flex-end;
+  }
+  .menu-link-item {
+    margin-right: 1.5rem;
+  }
+  .main {
+    padding: 15rem 0 0 0;
+  }
+  .main .description {
+    order: 1;
+    margin: 2.5rem 0 0 2rem;
+    align-items: center;
+  }
+  .clinic img {
+    order: 0;
+    width: 24rem;
+  }
+  .clinic::before {
+    top: -1.25rem;
+    left: -16.9rem
+  }
+  .about {
+    height: auto;
+  }
+  .about-image img {
+    width: 24rem;
+    margin-right: 0;
+  }
+  .about-image::before {
+    left: 5rem;
+    top: -1.125rem;
+  }
+  .about-image {
+    order: 1
+  }
+  .about-us {
+    padding: 0 2rem;
+    order: 0;
+  }
+  .services {
+    height: auto;
+    padding: 10rem 2rem;
+  }
+  .services-description {
+    padding: 0;
+  }
+  .services-examples-item {
+    height: auto;
+  }
+  .services-examples-item h4 {
+    font-size: 1.2rem;
+  }
+  .services-examples-item p {
+    margin: 0 2rem 2.5rem;
+  }
+  .testimony-items {
+    padding: 4rem 2rem 3.625rem;
+  }
+  .contact {
+    padding: 10rem 2rem;
+  }
+  .contact-text {
+    width: auto;
+    margin-right: 0;
+    padding-right: 3rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1294px) {
+  
 }
