@@ -787,14 +787,32 @@ footer .socials a:hover {
     margin-right: 0;
   }
 }
-@media (min-width: 1351px) {
+@media (min-width: 1350px) {
   .main {
     gap: 3rem;
   }
-  .clinic img {
-    width: 40rem
-  }
   .services-examples {
     justify-content: space-between;
+  }
+}
+@media (min-width: 1600px) {
+  .main {
+    gap: 0;
+    justify-content: space-between;
+    padding: 15rem 7.65rem 0rem 7.65rem;
+  }
+  .clinic img, .clinic::before {
+    width: 45rem;
+  }
+  .services-examples-item {
+    width: 30rem;
+  }
+  .contact {
+    justify-content: space-between;
+    padding: 10rem 7.65rem;
+  }
+  .contact-text {
+    width: auto;
+    text-align: center;
   }
 }
