@@ -787,12 +787,12 @@ footer .socials a:hover {
     margin-right: 0;
   }
 }
-@media (min-width: 1350px) {
+@media (min-width: 1351px) {
   .main {
-    gap: 4rem;
+    gap: 3rem;
   }
   .clinic img {
-    width: 45rem
+    width: 40rem
   }
   .services-examples {
     justify-content: space-between;
