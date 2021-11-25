@@ -787,3 +787,14 @@ footer .socials a:hover {
     margin-right: 0;
   }
 }
+@media (min-width: 1350px) {
+  .main {
+    gap: 4rem;
+  }
+  .clinic img {
+    width: 45rem
+  }
+  .services-examples {
+    justify-content: space-between;
+  }
+}
