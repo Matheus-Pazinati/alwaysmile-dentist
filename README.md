@@ -16,14 +16,14 @@ Você pode conferir o site do consultório através deste link: <a href="https:/
   <li>CSS</li>
   <li>Javascript</li>
 </ul>
-<p>📚 Bibliotecas</p>
+<h3>📚 Bibliotecas</h3>
 <ul>
   <li><a href="https://swiperjs.com/">SwiperJS</a></li>
   <li><a href="https://scrollrevealjs.org/">ScrollRevealJS</a></li>
 </ul>
 <br>
 <h2>🏷️ Layout</h2>
-<p>Você pode visualizar o layout do projeto através deste link: <a href="https://www.figma.com/community/file/1009807319507822993">Layout do projeto</a>. É necessário possuir uma conta no <a href="https://figma.com">Figma</a> para acessá-lo.</p>
+<p>Você pode visualizar o layout do projeto através deste link: <a href="https://www.figma.com/file/Ve4hpTfmMa7yAFneoGtGKD/Alura-Challenge---Edi%C3%A7%C3%A3o-Front-end?node-id=207%3A729&viewport=86%2C-1148%2C0.3736729025840759">Layout do projeto</a>. É necessário possuir uma conta no <a href="https://figma.com">Figma</a> para acessá-lo.</p>
 <br>
 <br>
 <p align="center">Made by Matheus Pazinati 🛸</p>
