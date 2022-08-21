@@ -4,7 +4,7 @@
 </p>
 <br>
 <h2>💺 Sobre</h2>
-<p>Projeto desenvolvido durante a Next Level Week Together (NLW) da Rocketseat. A Alwaysmile é um consultório odontológico especializado em tratamentos naturais.<br>
+<p>Projeto desenvolvido durante a Next Level Week Together (NLW) da Rocketseat. A Alwaysmile é um consultório odontológico especializado em tratamentos naturais (Empresa fictícia).<br>
 Você pode conferir o site do consultório através deste link: <a href="https://matheus-pazinati.github.io/alwaysmile-dentist/">Site da Alwaysmile</a>.</p>
 <br>
 <h2>🎯 Objetivo </h2>
@@ -16,15 +16,14 @@ Você pode conferir o site do consultório através deste link: <a href="https:/
   <li>CSS</li>
   <li>Javascript</li>
 </ul>
-<p>📚 Bibliotecas</p>
+<h3>📚 Bibliotecas</h3>
 <ul>
   <li><a href="https://swiperjs.com/">SwiperJS</a></li>
   <li><a href="https://scrollrevealjs.org/">ScrollRevealJS</a></li>
 </ul>
 <br>
 <h2>🏷️ Layout</h2>
-<p>Você pode visualizar o layout do projeto através deste link: <a href="https://www.figma.com/community/file/1009807319507822993">Layout do projeto</a>. É necessário possuir uma conta no <a href="https://figma.com">Figma</a> para acessá-lo.</p>
+<p>Você pode visualizar o layout do projeto através deste link: <a href="https://www.figma.com/file/Gm9aeQag7Ho8jds3t9gqVj/Origin-Six-(Community)?node-id=0%3A1">Layout do projeto</a>. É necessário possuir uma conta no <a href="https://figma.com">Figma</a> para acessá-lo.</p>
 <br>
 <br>
 <p align="center">Made by Matheus Pazinati 🛸</p>
-
