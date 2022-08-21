@@ -1,0 +1,21 @@
+{
+  "name": "nlw-together",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">🦷 Alwaysmile.</h1>\r <p align=center>\r   <img src=\"https://media.giphy.com/media/EjWJJGgAJNWePHejc7/giphy.gif\">\r </p>\r <br>\r <h2>💺 Sobre</h2>\r <p>Projeto desenvolvido durante a Next Level Week Together (NLW) da Rocketseat. A Alwaysmile é um consultório odontológico especializado em tratamentos naturais.<br>\r Você pode conferir o site do consultório através deste link: <a href=\"https://matheus-pazinati.github.io/alwaysmile-dentist/\">Site da Alwaysmile</a>.</p>\r <br>\r <h2>🎯 Objetivo </h2>\r <p>Praticar os conhecimentos obtidos em HTML, CSS e Javascript, utilizar bibliotecas para auxiliar o desenvolvimento do projeto e reproduzir fielmente o que o designer definiu no Figma (espaçamentos entre os elementos, tamanho e estilo de fontes), alterando apenas o tema do site e as imagens.</p>\r <br>\r <h2>🚀 Tecnologias utilizadas</h2>\r <ul>\r   <li>HTML</li>\r   <li>CSS</li>\r   <li>Javascript</li>\r </ul>\r <p>📚 Bibliotecas</p>\r <ul>\r   <li><a href=\"https://swiperjs.com/\">SwiperJS</a></li>\r   <li><a href=\"https://scrollrevealjs.org/\">ScrollRevealJS</a></li>\r </ul>\r <br>\r <h2>🏷️ Layout</h2>\r <p>Você pode visualizar o layout do projeto através deste link: <a href=\"https://www.figma.com/community/file/1009807319507822993\">Layout do projeto</a>. É necessário possuir uma conta no <a href=\"https://figma.com\">Figma</a> para acessá-lo.</p>\r <br>\r <br>\r <p align=\"center\">Made by Matheus Pazinati 🛸</p>",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matheus-Pazinati/alwaysmile-dentist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matheus-Pazinati/alwaysmile-dentist/issues"
+  },
+  "homepage": "https://github.com/Matheus-Pazinati/alwaysmile-dentist#readme"
+}
