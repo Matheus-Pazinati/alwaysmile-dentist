@@ -1,17 +1,7 @@
+import { showMenu } from "./show-menu-mobile.js"
+
 //Abrindo e fechando menu mobile
-const mostraMenu = document.querySelector('header nav') 
-const iconesMenu = document.querySelectorAll('.toggle') //Icone do menu e Icone 'X'
-iconesMenu.forEach((icone) => { //Para cada um dos icones, faça...
-  icone.addEventListener('click', () => { //Quando eu clicar em qualquer um dos dois, verifica...
-    mostraMenu.classList.toggle('show') //Se não tiver o show, coloca, se tiver, retira
-  })
-})
-const linksMenu = document.querySelectorAll('.menu-link li a') //Seleciona todos os links do menu
-linksMenu.forEach((link) => { //Para cada um deles, faça...
-  link.addEventListener('click', () => { //Quando eu clicar em qualquer um deles
-    mostraMenu.classList.remove('show') //Remova a classe show
-  })
-})
+showMenu()
 
 //Aplicando sombra no cabeçalho quando der scroll na página
 const cabecalho = document.querySelector('.menu')
