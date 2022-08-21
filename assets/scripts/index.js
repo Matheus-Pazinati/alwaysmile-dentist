@@ -1,31 +1,14 @@
+import { handleUpButton } from "./handle-up-button.js";
+import { setHeaderShadow } from "./set-header-shadow.js"
 import { showMenu } from "./show-menu-mobile.js"
 
 //Abrindo e fechando menu mobile
 showMenu()
 
-//Aplicando sombra no cabeçalho quando der scroll na página
-const cabecalho = document.querySelector('.menu')
-const alturaCabecalho = cabecalho.offsetHeight
-function sombraCabecalho() {
-  if (window.scrollY >= alturaCabecalho ){
-    cabecalho.classList.add('scroll')
-  } else {
-    cabecalho.classList.remove('scroll')
-  }
-}
-
-//Funcao para verificar se o botão de retornar ao topo não está lá em cima na página
-const botaoTopo = document.querySelector('#button-top')//Seleciona div que contem o botao 
-function verificaBotaoTopo() {
-  if (window.scrollY >= 560){ //Se o scroll for maior que 560 de altura...
-    botaoTopo.classList.remove('hide-button')//Mostre o botão
-  } else {
-    botaoTopo.classList.add('hide-button')//Se não, esconda o botão
-  }
-}
+//Aplicando sombra no cabeçalho e incluindo botão de voltar para cima dependendo do scroll na página
 window.addEventListener ('scroll', () => {
-  sombraCabecalho();
-  verificaBotaoTopo();
+  setHeaderShadow();
+  handleUpButton();
 })
 
 //Criando carrossel dos depoimentos com o Swiper
